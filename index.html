@@ -16,80 +16,185 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
+    <script src="script.js" defer></script>
     <title>Devchallenges</title>
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <nav>
+      <span class="logo">Edie</span>
+      <div class="navLinks">
+        <div class="navLinksWrapper">
+          <a href="#">Home</a>
+          <a href="#services">Services</a>
+          <a href="#examples">Our works</a>
+          <a href="#testim">Clients</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
+      <div class="burger">
+        <div class="burg burg-1"></div>
+        <div class="burg burg-2"></div>
+        <div class="burg burg-3"></div>
+      </div>
+    </nav>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    <header>
+      <div class="header__wrapper">
+        <div class="subheading">Unhappy with your website?</div>
+        <h1>We create beautiful and fast web services</h1>
+      </div>
+      <div class="header__img">
+        <img src="heroImage.jpg" alt="">
+      </div>
+      <div class="header__wrapper">
+        <h2>Story, emotion and purpose</h2>
+        <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+        <span>Want us to contact you?</span>
+        <div class="btn">
+          <button>Join</button>
+          <input type="text" placeholder="Email">
+        </div>
+      </div>
+    </header>
+
+    <section id="services" class="services-section container">
+      <h2>We offer high demand services</h2>
+      <div class="services">
+        <div class="services__item">
+          <span class="material-icons">create</span>
+          <h3>UI/UX Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <button>Get started</button>
+        </div>
+        <div class="services__item">
+          <span class="material-icons">swap_horiz</span>
+          <h3>Front End</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <button>Get started</button>
+        </div>
+        <div class="services__item">
+          <span class="material-icons">list</span>
+          <h3>Back End</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <button>Get started</button>
+        </div>
+      </div>
+    </section>
+    <section id="examples" class="examples container">
+      <h2>Good design means good business</h2>
+      <div class="examples__grid">
+        <div class="examples__grid__example">
+          <img src="smarthome.jpg" alt="">
+          <span>Full stack application</span>
+          <h4>Smart home dashboard</h4>
+        </div>
+        <div class="examples__grid__example">
+          <img src="onboard.png" alt="">
+          <span>UX/UI design</span>
+          <h4>Onboard application</h4>
+        </div>
+        <div class="examples__grid__example">
+          <img src="booking.png" alt="">
+          <span>Mobile application</span>
+          <h4>Booking system</h4>
+        </div>
+        <div class="examples__grid__example">
+          <img src="juice-product.png" alt="">
+          <span>Front end application on</span>
+          <h4>Juice product homepage</h4>
+        </div>
+        <div class="examples__grid__example">
+          <a href="#">see more </a>
+          <span class="material-icons">arrow_right_alt</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container team">
+      <div class="team__hero">
+        <span>Meet the team</span>
+        <h4>We are chilled and laidback team</h4>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+      </div>
+      <div class="team__pics">
+        <div class="team__pics__pic">
+          <img src="person3.png" alt="">
+        </div>
+        <div class="team__pics__pic">
+          <img src="person1.png" alt="">
+        </div>
+        <div class="team__pics__pic">
+          <img src="person2.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="testim" class="testim container">
+      <h4>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h4>
+      <div class="testim__info">
+        <div class="img-wrapper">
+          <img src="person4.png" alt="">
+        </div>
+        <div class="person-wrapper">
+          <h5>Carlos Tran</h5>
+          <span>The Decorate Gatsby</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div id="contact" class="footer-content">
+          <div class="links">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#examples">Our works</a>
+              </li>
+              <li>
+                <a href="#testim">Clients</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <h4>Edie</h4>
+            <div class="social__media">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M59.125,17.91667c-22.72192,0 -41.20833,18.48642 -41.20833,41.20833v53.75c0,22.72192 18.48642,41.20833 41.20833,41.20833h53.75c22.72192,0 41.20833,-18.48642 41.20833,-41.20833v-53.75c0,-22.72192 -18.48642,-41.20833 -41.20833,-41.20833zM121.83333,43c3.95958,0 7.16667,3.20708 7.16667,7.16667c0,3.956 -3.20708,7.16667 -7.16667,7.16667c-3.95958,0 -7.16667,-3.21067 -7.16667,-7.16667c0,-3.95958 3.20708,-7.16667 7.16667,-7.16667zM86,50.16667c19.7585,0 35.83333,16.07483 35.83333,35.83333c0,19.7585 -16.07483,35.83333 -35.83333,35.83333c-19.7585,0 -35.83333,-16.07483 -35.83333,-35.83333c0,-19.7585 16.07483,-35.83333 35.83333,-35.83333zM86,60.91667c-13.85314,0 -25.08333,11.23019 -25.08333,25.08333c0,13.85314 11.23019,25.08333 25.08333,25.08333c13.85314,0 25.08333,-11.23019 25.08333,-25.08333c0,-13.85314 -11.23019,-25.08333 -25.08333,-25.08333z"></path></g></g></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M41.20833,21.5c-10.82086,0 -19.70833,8.88748 -19.70833,19.70833v89.58333c0,10.82086 8.88748,19.70833 19.70833,19.70833h89.58333c10.82086,0 19.70833,-8.88748 19.70833,-19.70833v-89.58333c0,-10.82086 -8.88748,-19.70833 -19.70833,-19.70833zM41.20833,32.25h89.58333c5.01031,0 8.95833,3.94802 8.95833,8.95833v89.58333c0,5.01031 -3.94802,8.95833 -8.95833,8.95833h-89.58333c-5.01031,0 -8.95833,-3.94802 -8.95833,-8.95833v-89.58333c0,-5.01031 3.94802,-8.95833 8.95833,-8.95833zM55.54167,46.58333c-4.94755,0 -8.95833,4.01078 -8.95833,8.95833c0,4.94755 4.01078,8.95833 8.95833,8.95833c4.94755,0 8.95833,-4.01078 8.95833,-8.95833c0,-4.94755 -4.01078,-8.95833 -8.95833,-8.95833zM50.16667,71.66667c-1.98158,0 -3.58333,1.60175 -3.58333,3.58333v46.58333c0,1.98158 1.60175,3.58333 3.58333,3.58333h10.75c1.98158,0 3.58333,-1.60175 3.58333,-3.58333v-46.58333c0,-1.98158 -1.60175,-3.58333 -3.58333,-3.58333zM75.25,71.66667c-1.98158,0 -3.58333,1.60175 -3.58333,3.58333v46.58333c0,1.98158 1.60175,3.58333 3.58333,3.58333h10.75c1.98158,0 3.58333,-1.60175 3.58333,-3.58333v-26.875c0,-4.94142 4.01692,-8.95833 8.95833,-8.95833c4.94142,0 8.95833,4.01692 8.95833,8.95833v26.875c0,1.98158 1.60175,3.58333 3.58333,3.58333h10.75c1.98158,0 3.58333,-1.60175 3.58333,-3.58333v-28.66667c0,-11.85725 -9.64275,-21.5 -21.5,-21.5c-5.51117,0 -10.52425,2.09989 -14.33333,5.52197v-1.93864c0,-1.98158 -1.60175,-3.58333 -3.58333,-3.58333z"></path></g></g></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M44.72,10.32c-18.95899,0 -34.4,15.44101 -34.4,34.4v82.56c0,18.95899 15.44101,34.4 34.4,34.4h82.56c18.95899,0 34.4,-15.44101 34.4,-34.4v-82.56c0,-18.96206 -15.44147,-34.4 -34.4,-34.4zM44.72,17.2h82.56c15.24195,0 27.52,12.2747 27.52,27.52v82.56c0,15.24149 -12.27851,27.52 -27.52,27.52h-82.56c-15.24149,0 -27.52,-12.27851 -27.52,-27.52v-82.56c0,-15.24149 12.27851,-27.52 27.52,-27.52zM105.58515,48.16c-12.3903,0 -22.49437,10.14324 -22.49437,22.54813c0,0.08957 0.03256,0.17262 0.03359,0.26203c-13.12126,-1.74962 -24.73152,-8.24151 -32.70687,-18.04656c-0.71322,-0.87666 -1.81152,-1.34713 -2.93819,-1.2586c-1.12667,0.08852 -2.13801,0.72475 -2.70556,1.70204c-1.93587,3.33602 -3.03687,7.22269 -3.03688,11.33453c0,3.66337 1.01648,7.07344 2.57328,10.14531c-1.59033,0.33667 -2.72797,1.74052 -2.72781,3.3661v0.24188c0,6.66879 3.1096,12.44551 7.72656,16.58187c-0.94877,0.91045 -1.29559,2.28207 -0.89359,3.53406c1.92072,5.99037 6.39373,10.6872 12.0064,13.33c-4.48731,2.10554 -9.29108,3.61469 -14.59312,3.61469c-1.41315,0 -2.78683,-0.07361 -4.13203,-0.23515c-1.59266,-0.19462 -3.10837,0.73754 -3.65322,2.2467c-0.54484,1.50916 0.02588,3.19457 1.37556,4.0622c8.95694,5.76779 19.6334,9.13078 31.0675,9.13078c18.47751,0 33.0781,-7.78007 42.83875,-18.87969c9.76065,-11.09961 14.82828,-25.42263 14.82828,-38.915c0,-0.40818 -0.01827,-0.8013 -0.02687,-1.20266c3.35202,-2.69652 6.5063,-5.67123 8.89562,-9.25844c0.80046,-1.21095 0.75473,-2.79403 -0.1143,-3.95675c-0.86903,-1.16273 -2.37435,-1.65489 -3.76241,-1.23012c0.56117,-1.09165 1.34714,-2.0444 1.72672,-3.23172c0.43671,-1.3626 -0.01557,-2.85325 -1.1358,-3.74346c-1.12023,-0.89021 -2.67452,-0.99411 -3.90326,-0.26091c-3.00601,1.78675 -6.3781,2.96842 -9.87656,3.78938c-3.9328,-3.35984 -8.82411,-5.67063 -14.37141,-5.67063zM105.58515,55.04c4.51105,0 8.54713,1.89693 11.395,4.945c0.81216,0.86595 2.0134,1.25197 3.17797,1.02125c0.53249,-0.10516 0.95959,-0.44589 1.48484,-0.5711c-0.07726,0.0483 -0.12341,0.13445 -0.20156,0.18141c-1.33592,0.80186 -1.96617,2.40144 -1.53626,3.89905c0.42991,1.49761 1.81265,2.51933 3.37048,2.49049c-0.24221,0.18538 -0.38467,0.4796 -0.63156,0.65844c-0.93625,0.67559 -1.4712,1.77577 -1.42438,2.92937c0.03268,0.77546 0.05375,1.55579 0.05375,2.33141c0,11.75034 -4.51911,24.6057 -13.10828,34.37312c-8.5892,9.76744 -21.10609,16.54156 -37.67875,16.54156c-5.70032,0 -11.06163,-1.15054 -16.16531,-2.88906c6.3538,-1.34308 12.36755,-3.58887 17.29406,-7.46453c1.14085,-0.8998 1.5934,-2.41932 1.13076,-3.79668c-0.46264,-1.37737 -1.74071,-2.31559 -3.19342,-2.34425c-4.874,-0.08851 -8.63342,-2.85033 -11.43531,-6.42312c1.03644,-0.13416 2.10949,-0.14345 3.09735,-0.41656c1.53839,-0.42136 2.58542,-1.84489 2.5294,-3.43896c-0.05602,-1.59407 -1.20038,-2.94059 -2.76456,-3.25292c-5.68144,-1.14885 -10.12065,-5.42974 -11.74437,-10.965c1.46478,0.35395 2.74919,1.14625 4.30672,1.19594c1.53289,0.04695 2.91176,-0.9264 3.3808,-2.38652c0.46905,-1.46012 -0.085,-3.05439 -1.35846,-3.90895c-4.19435,-2.81033 -6.94719,-7.58452 -6.94719,-13.04781c0,-1.12674 0.60383,-2.02285 0.82641,-3.07719c9.77022,9.69385 22.7701,16.12972 37.41,16.87078c1.08031,0.05415 2.12318,-0.40292 2.81551,-1.23399c0.69233,-0.83107 0.95351,-1.93935 0.70511,-2.9921c-0.26802,-1.1363 -0.40312,-2.32287 -0.40312,-3.56094c0,-8.69608 6.95187,-15.66813 15.61437,-15.66813z"></path></g></g></svg>
+            </div>
+          </div>
+          <div class="subscribe">
+            <h4>Want us to contact you?</h4>
+            <div class="btn">
+              <button>Join</button>
+              <input type="text" placeholder="Email">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
